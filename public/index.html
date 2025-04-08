@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>מערכת ספירה</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #e6ffe6;
+      color: #003366;
+      padding: 10px;
+    }
+    h1 { color: #003366; }
+    select, button {
+      font-size: 1.2em;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+    select { background-color: #ccffcc; }
+    button { background-color: #66ccff; color: white; }
+    video, canvas {
+      max-width: 100%;
+      border: 2px solid #003366;
+      margin: 10px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>בחירת חומר → ספירה → שליחה</h1>
+  <select id="materialSelect"><option>טוען...</option></select><br>
+  <video id="video" autoplay playsinline width="320" height="240"></video>
+  <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+  <div>נספרו: <span id="count">0</span></div>
+  <button onclick="send()">שלח ל-Google Sheets</button>
+  <script src="app.js"></script>
+</body>
+</html>
+    
