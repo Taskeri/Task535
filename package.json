@@ -1,0 +1,15 @@
+{
+  "name": "sheet-counter-final",
+  "version": "1.0.0",
+  "description": "מערכת ספירה ושידור ל-Google Sheets",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "googleapis": "^105.0.0"
+  }
+}
